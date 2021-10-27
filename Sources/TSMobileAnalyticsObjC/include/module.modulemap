@@ -1,0 +1,4 @@
+module TSMobileAnalyticsObjC {
+    umbrella header "TSMobileAnalytics.h"
+    export *
+}
