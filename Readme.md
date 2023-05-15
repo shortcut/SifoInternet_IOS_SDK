@@ -77,7 +77,7 @@ Minimum iOS deployment target: 9.0
 
 Swift Package Manager:
 ``` Ruby
-source 'https://github.com/shortcut/sifo-mobileanalyticssdk-ios.git'
+source 'https://github.com/kantarsifo/SifoInternet_IOS_SDK.git'
 ``` 
 
 1. Set branch to spm-package
