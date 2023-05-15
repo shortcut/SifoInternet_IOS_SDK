@@ -80,9 +80,6 @@ Swift Package Manager:
 source 'https://github.com/kantarsifo/SifoInternet_IOS_SDK.git'
 ``` 
 
-1. Set branch to spm-package
-2. Import TSAnalyticsSwift library
-
 **2. Initialize the framework**
 
 ``` SWIFT
