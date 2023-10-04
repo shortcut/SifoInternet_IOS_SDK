@@ -1,0 +1,37 @@
+## Build generated
+build/
+DerivedData/
+archives
+TSMobileAnalytics.xcframework
+
+## Garbage
+.DS_Store
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+project.xcworkspace
+*.xcuserstate
+*.xcworkspacedata
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+
+## Generated docs
+Documentation/Reference
+
+## Other
+*.moved-aside
+Publish
+Pods
+Podfile.lock
+*.zip
+*.bkup

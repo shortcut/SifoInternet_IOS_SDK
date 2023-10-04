@@ -77,8 +77,11 @@ Minimum iOS deployment target: 9.0
 
 Swift Package Manager:
 ``` Ruby
-source 'https://github.com/kantarsifo/SifoInternet_IOS_SDK.git'
+source 'https://github.com/shortcut/sifo-mobileanalyticssdk-ios.git'
 ``` 
+
+1. Set branch to spm-package
+2. Import TSAnalyticsSwift library
 
 **2. Initialize the framework**
 
@@ -195,7 +198,7 @@ Before the app is submitted to App Store, tests need to be performed according t
 
 Please send any questions or feedback to:
 
-[*peter.andersson@kantar.com*](mailto:peter.andersson@kantar.com)
+[*SwedishInternetSDK@kantar.com*](mailto:SwedishInternetSDK@kantar.com)
 +46 (0)701 842 372
 
 [*info@kantarsifo.com*](mailto:info@kantarsifo.com)
