@@ -193,9 +193,9 @@ Keychain API expects as a validly constructed container class.
     {
         NSMutableDictionary *tempDictionary = [self dictionaryToSecItemFormat:keychainItemData];
 #ifndef NS_BLOCK_ASSERTIONS
-		OSStatus junk = 
+        OSStatus junk =
 #endif
-			SecItemDelete((__bridge CFDictionaryRef)tempDictionary);
+        SecItemDelete((__bridge CFDictionaryRef)tempDictionary);
         NSAssert( junk == noErr || junk == errSecItemNotFound, @"Problem deleting current dictionary." );
     }
     

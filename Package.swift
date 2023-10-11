@@ -23,9 +23,12 @@ let package = Package(
             dependencies: []),
         .target(
             name: "TSMobileAnalytics",
-            dependencies: ["TSMobileAnalyticsObjC"]),
+            dependencies: [],
+            resources: [
+                .copy("TestData/SyncResponse.json")
+            ]),
         .testTarget(
             name: "TSMobileAnalyticsTests",
-            dependencies: ["TSMobileAnalytics"]),
+            dependencies: ["TSMobileAnalytics"])
     ]
 )

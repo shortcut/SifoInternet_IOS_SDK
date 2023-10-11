@@ -9,7 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "TSMobileAnalytics.h"
 
-@interface TSMobileAnalyticsTests : XCTestCase
+@interface TSMobileAnalyticsObjCTests : XCTestCase
 
 @property (nonatomic) TSMobileAnalytics *frameworkInstance;
 
@@ -21,7 +21,7 @@
 + (NSArray  * _Nullable)parseURLEncodedJSONCookie:(NSString *)urlEncodedJsonString;
 @end
 
-@implementation TSMobileAnalyticsTests
+@implementation TSMobileAnalyticsObjCTests
 
 - (void)setUp {
     [super setUp];
@@ -45,7 +45,7 @@
         XCTAssertNil(error);
         [expectation fulfill];
     }];
-    
+
     [self waitForExpectationsWithTimeout:10 handler:^(NSError * _Nullable error) {
         XCTAssertNil(error);
     }];
