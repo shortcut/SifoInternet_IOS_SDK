@@ -149,7 +149,7 @@ public final class TSMobileAnalytics {
             return
         }
 
-        Self.shared = .init(
+        Self.shared = TSMobileAnalytics(
             cpid: cpid,
             applicationName: applicationName,
             trackingType: trackingType,

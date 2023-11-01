@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TSMobileAnalytics.setLogPrintsActivated(true)
         TSMobileAnalytics.initialize(withCPID: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                                      applicationName: "Sample app",
-                                    trackingType: .TrackUsersAndPanelists, enableSystemIdentifierTracking: false,
+                                     trackingType: .TrackUsersAndPanelists, enableSystemIdentifierTracking: false,
                                      isWebViewBased: true,
                                      keychainAccessGroup: "mo.dyna.TSMobileAnalyticsIntegration")
         
