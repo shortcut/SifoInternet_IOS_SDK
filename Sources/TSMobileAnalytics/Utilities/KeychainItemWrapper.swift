@@ -123,6 +123,10 @@ private extension KeychainItemWrapper {
     }
 
     func deleteKeychainItems(in keychainItems: [CFString: Any]) {
+        guard !keychainItems.isEmpty else {
+            return
+        }
+
         let secItemDictionary = secItemFormattedDictionary(from: keychainItems)
         let status = SecItemDelete(secItemDictionary as CFDictionary)
 
