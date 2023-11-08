@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 import TSMobileAnalytics
 
 @UIApplicationMain
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.green
-        self.window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        self.window?.rootViewController = UIHostingController(rootView: ExampleView())
         self.window?.makeKeyAndVisible()
         
         //Initiate TSMobileAnalytics
@@ -26,10 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         TSMobileAnalytics.setLogPrintsActivated(true)
         TSMobileAnalytics.initialize(withCPID: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
                                      applicationName: "Sample app",
-                                    trackingType: .TrackUsersAndPanelists, enableSystemIdentifierTracking: false,
+                                     trackingType: .TrackUsersAndPanelists, enableSystemIdentifierTracking: false,
                                      isWebViewBased: true,
-                                     keychainAccessGroup: "mo.dyna.TSMobileAnalyticsIntegration",
-                                     additionals: nil)
+                                     keychainAccessGroup: "mo.dyna.TSMobileAnalyticsIntegration")
         
         return true
     }

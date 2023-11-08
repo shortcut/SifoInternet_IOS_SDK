@@ -14,7 +14,6 @@ public final class TSMobileAnalytics {
 
     // TODO: Find a way to automate this.
     /// This needs to be updated when a new release is made.
-    ///
     /// Swift Package version numbers are grabbed from the tags of the git repository.
     static let sdkVersion = "6.0.0"
 
@@ -149,7 +148,7 @@ public final class TSMobileAnalytics {
             return
         }
 
-        Self.shared = .init(
+        Self.shared = TSMobileAnalytics(
             cpid: cpid,
             applicationName: applicationName,
             trackingType: trackingType,

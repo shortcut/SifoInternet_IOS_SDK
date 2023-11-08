@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,15 +12,13 @@
 		7868104B1E1A8E8E00F1E3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868104A1E1A8E8E00F1E3D5 /* AppDelegate.swift */; };
 		786810551E1A8E8E00F1E3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786810531E1A8E8E00F1E3D5 /* LaunchScreen.storyboard */; };
 		786810601E1A8E8E00F1E3D5 /* TSMobileAnalyticsIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868105F1E1A8E8E00F1E3D5 /* TSMobileAnalyticsIntegrationTests.swift */; };
-		7868106C1E1AAA1300F1E3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868106B1E1AAA1300F1E3D5 /* ViewController.swift */; };
-		7868106E1E1AAADC00F1E3D5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7868106D1E1AAADC00F1E3D5 /* ViewController.xib */; };
+		7868106C1E1AAA1300F1E3D5 /* NativeExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868106B1E1AAA1300F1E3D5 /* NativeExampleView.swift */; };
 		786810731E1AADE300F1E3D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868104A1E1A8E8E00F1E3D5 /* AppDelegate.swift */; };
 		786810761E1AADE300F1E3D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786810531E1A8E8E00F1E3D5 /* LaunchScreen.storyboard */; };
-		786810801E1AAE4E00F1E3D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868107E1E1AAE4E00F1E3D5 /* ViewController.swift */; };
-		786810811E1AAE4E00F1E3D5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7868107F1E1AAE4E00F1E3D5 /* ViewController.xib */; };
-		7868109A1E1BBCCC00F1E3D5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786810981E1BBCCC00F1E3D5 /* WebViewController.swift */; };
-		DFD170002719CE7600B7BD1C /* TSMobileAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DFD16FFF2719CE7600B7BD1C /* TSMobileAnalytics */; };
-		DFD170022719CE7E00B7BD1C /* TSMobileAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DFD170012719CE7E00B7BD1C /* TSMobileAnalytics */; };
+		786810801E1AAE4E00F1E3D5 /* HybridExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7868107E1E1AAE4E00F1E3D5 /* HybridExampleView.swift */; };
+		DFAB0D122ACD9B9F0014D652 /* TSMobileAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DFAB0D112ACD9B9F0014D652 /* TSMobileAnalytics */; };
+		DFAB0D142ACD9BBD0014D652 /* TSMobileAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DFAB0D132ACD9BBD0014D652 /* TSMobileAnalytics */; };
+		DFAB0D162ACD9CD80014D652 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAB0D152ACD9CD80014D652 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,18 +40,16 @@
 		7868105B1E1A8E8E00F1E3D5 /* TSMobileAnalyticsIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSMobileAnalyticsIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7868105F1E1A8E8E00F1E3D5 /* TSMobileAnalyticsIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSMobileAnalyticsIntegrationTests.swift; sourceTree = "<group>"; };
 		786810611E1A8E8E00F1E3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7868106B1E1AAA1300F1E3D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7868106D1E1AAADC00F1E3D5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7868106B1E1AAA1300F1E3D5 /* NativeExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeExampleView.swift; sourceTree = "<group>"; };
 		7868107C1E1AADE300F1E3D5 /* HybridIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7868107D1E1AADE400F1E3D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = TSMobileAnalyticsIntegration/Info.plist; sourceTree = SOURCE_ROOT; };
-		7868107E1E1AAE4E00F1E3D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7868107F1E1AAE4E00F1E3D5 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7868107E1E1AAE4E00F1E3D5 /* HybridExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HybridExampleView.swift; sourceTree = "<group>"; };
 		786810821E1AD3C000F1E3D5 /* TSMobileAnalyticsIntegration.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TSMobileAnalyticsIntegration.entitlements; sourceTree = "<group>"; };
 		786810841E1AE57D00F1E3D5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		786810861E1AE58E00F1E3D5 /* TSMobileAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TSMobileAnalytics.framework; sourceTree = "<group>"; };
 		786810911E1AE6C800F1E3D5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		786810941E1AE6F700F1E3D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		786810981E1BBCCC00F1E3D5 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		DFAB0D152ACD9CD80014D652 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD170002719CE7600B7BD1C /* TSMobileAnalytics in Frameworks */,
+				DFAB0D122ACD9B9F0014D652 /* TSMobileAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD170022719CE7E00B7BD1C /* TSMobileAnalytics in Frameworks */,
+				DFAB0D162ACD9CD80014D652 /* WebKit.framework in Frameworks */,
+				DFAB0D142ACD9BBD0014D652 /* TSMobileAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,8 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				78071EA81E23DE6C008313A1 /* Assets.xcassets */,
-				7868106B1E1AAA1300F1E3D5 /* ViewController.swift */,
-				7868106D1E1AAADC00F1E3D5 /* ViewController.xib */,
+				7868106B1E1AAA1300F1E3D5 /* NativeExampleView.swift */,
 			);
 			path = NativeIntegration;
 			sourceTree = "<group>";
@@ -139,9 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				78071EA61E23DE4E008313A1 /* Assets.xcassets */,
-				7868107E1E1AAE4E00F1E3D5 /* ViewController.swift */,
-				7868107F1E1AAE4E00F1E3D5 /* ViewController.xib */,
-				786810981E1BBCCC00F1E3D5 /* WebViewController.swift */,
+				7868107E1E1AAE4E00F1E3D5 /* HybridExampleView.swift */,
 			);
 			path = HybridIntegration;
 			sourceTree = "<group>";
@@ -149,6 +143,7 @@
 		786810831E1AE57D00F1E3D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFAB0D152ACD9CD80014D652 /* WebKit.framework */,
 				786810941E1AE6F700F1E3D5 /* Foundation.framework */,
 				786810911E1AE6C800F1E3D5 /* UIKit.framework */,
 				786810861E1AE58E00F1E3D5 /* TSMobileAnalytics.framework */,
@@ -174,7 +169,7 @@
 			);
 			name = NativeIntegration;
 			packageProductDependencies = (
-				DFD16FFF2719CE7600B7BD1C /* TSMobileAnalytics */,
+				DFAB0D112ACD9B9F0014D652 /* TSMobileAnalytics */,
 			);
 			productName = TSMobileAnalyticsIntegration;
 			productReference = 786810471E1A8E8E00F1E3D5 /* NativeIntegration.app */;
@@ -212,7 +207,7 @@
 			);
 			name = HybridIntegration;
 			packageProductDependencies = (
-				DFD170012719CE7E00B7BD1C /* TSMobileAnalytics */,
+				DFAB0D132ACD9BBD0014D652 /* TSMobileAnalytics */,
 			);
 			productName = TSMobileAnalyticsIntegration;
 			productReference = 7868107C1E1AADE300F1E3D5 /* HybridIntegration.app */;
@@ -261,7 +256,7 @@
 			);
 			mainGroup = 7868103E1E1A8E8E00F1E3D5;
 			packageReferences = (
-				DFD083642719BEA900081FBC /* XCRemoteSwiftPackageReference "sifo-mobileanalyticssdk-ios" */,
+				DFF663D72ACD99F700A0B1A7 /* XCLocalSwiftPackageReference "../../.." */,
 			);
 			productRefGroup = 786810481E1A8E8E00F1E3D5 /* Products */;
 			projectDirPath = "";
@@ -280,7 +275,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				786810551E1A8E8E00F1E3D5 /* LaunchScreen.storyboard in Resources */,
-				7868106E1E1AAADC00F1E3D5 /* ViewController.xib in Resources */,
 				78071EA91E23DE6C008313A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +291,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				786810761E1AADE300F1E3D5 /* LaunchScreen.storyboard in Resources */,
-				786810811E1AAE4E00F1E3D5 /* ViewController.xib in Resources */,
 				78071EAA1E23DE77008313A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7868106C1E1AAA1300F1E3D5 /* ViewController.swift in Sources */,
+				7868106C1E1AAA1300F1E3D5 /* NativeExampleView.swift in Sources */,
 				7868104B1E1A8E8E00F1E3D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,8 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786810801E1AAE4E00F1E3D5 /* ViewController.swift in Sources */,
-				7868109A1E1BBCCC00F1E3D5 /* WebViewController.swift in Sources */,
+				786810801E1AAE4E00F1E3D5 /* HybridExampleView.swift in Sources */,
 				786810731E1AADE300F1E3D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +475,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TSMobileAnalyticsIntegration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +502,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TSMobileAnalyticsIntegration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,7 +563,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TSMobileAnalyticsIntegration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,7 +589,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = TSMobileAnalyticsIntegration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -651,26 +643,20 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		DFD083642719BEA900081FBC /* XCRemoteSwiftPackageReference "sifo-mobileanalyticssdk-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/shortcut/sifo-mobileanalyticssdk-ios.git";
-			requirement = {
-				branch = "spm-package";
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		DFF663D72ACD99F700A0B1A7 /* XCLocalSwiftPackageReference "../../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../..;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DFD16FFF2719CE7600B7BD1C /* TSMobileAnalytics */ = {
+		DFAB0D112ACD9B9F0014D652 /* TSMobileAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DFD083642719BEA900081FBC /* XCRemoteSwiftPackageReference "sifo-mobileanalyticssdk-ios" */;
 			productName = TSMobileAnalytics;
 		};
-		DFD170012719CE7E00B7BD1C /* TSMobileAnalytics */ = {
+		DFAB0D132ACD9BBD0014D652 /* TSMobileAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DFD083642719BEA900081FBC /* XCRemoteSwiftPackageReference "sifo-mobileanalyticssdk-ios" */;
 			productName = TSMobileAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
