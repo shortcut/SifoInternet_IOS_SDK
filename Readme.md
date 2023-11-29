@@ -38,6 +38,10 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
+6.0.0
+- Complete Swift refactor of SDK
+- No API changes
+
 5.3.0
 - Swift Package Manager Support
 - Removed support for CocoaPods (will probably come back)
