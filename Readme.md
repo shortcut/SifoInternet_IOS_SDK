@@ -195,7 +195,7 @@ Before the app is submitted to App Store, tests need to be performed according t
 
 Please send any questions or feedback to:
 
-[*peter.andersson@kantar.com*](mailto:peter.andersson@kantar.com)
+[*SwedishInternetSDK@kantar.com*](mailto:SwedishInternetSDK@kantar.com)
 +46 (0)701 842 372
 
 [*info@kantarsifo.com*](mailto:info@kantarsifo.com)
