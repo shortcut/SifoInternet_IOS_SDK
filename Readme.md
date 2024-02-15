@@ -191,6 +191,13 @@ TSMobileAnalytics.sendTag(withCategories: ...,
 * Categories is an array of strings.
 * Id is a string with the identifier of the current content.
 
+## Frequently asked questions (FAQ)
+
+Q: My app does not sync with the Sifo Internet app. Why?  
+A: There can be a couple of things wrong. Please make sure that:  
+  - You have registered your app's bundle identifier as a custom URL scheme in your target's "Info"-tab, under "URL Types".
+  - You have implemented the `openURL:` -method in your app's application delegate, and forwarded that call to the framework. For more thorough information and a step by step-guide, please  section "Integrating with SIFO Internet app to tag TNS Sifo Panelists", under "Setup".
+
 ## Implementation check
 
 Before the app is submitted to App Store, tests need to be performed according to instructions provided by Kantar Sifo. To validate that SDK collect panelist data properly. Please contact Kantar Sifo.
