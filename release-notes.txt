@@ -12,6 +12,9 @@ using Kantar Sifo’s services. The SDK contains three folders:
 
 RELEASE NOTES:
 
+6.0.1 2024-02-27
+- Add Privacy Manifest 
+
 6.0.0 2023-11-29
 - Complete Swift refactor of SDK
 - No API changes
