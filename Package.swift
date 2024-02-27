@@ -25,7 +25,8 @@ let package = Package(
             name: "TSMobileAnalytics",
             dependencies: [],
             resources: [
-                .copy("TestData/SyncResponse.json")
+                .copy("TestData/SyncResponse.json"),
+                .copy("PrivacyInfo.xcprivacy")
             ]),
         .testTarget(
             name: "TSMobileAnalyticsTests",
