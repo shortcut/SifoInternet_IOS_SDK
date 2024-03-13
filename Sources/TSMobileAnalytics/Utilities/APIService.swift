@@ -118,10 +118,8 @@ final class APIService {
         appVersion: String,
         sdkVersion: String
     ) -> URL {
-        let categoryString = categoryString.replacingOccurrences(
-            of: String.slash, with: String.slashReplacement)
 
-        let parameters: [String : String] = [
+        let parameters: KeyValuePairs<String, String> = [
             .siteId : cpid,
             .appClientId : userID,
             .cp : categoryString,
@@ -144,7 +142,7 @@ final class APIService {
     }
 
     func syncURL(sdkVersion: String, appName: String, json: String) -> URL {
-        let parameters: [String: String] = [
+        let parameters: KeyValuePairs<String,String> = [
             .sdkVersion : sdkVersion,
             .appName.lowercased() : appName,
             .frameworkInfo : json
@@ -166,6 +164,22 @@ extension String {
 
         return encoded
     }
+
+    func queryEncoded() -> String {
+        guard let encoded = self.addingPercentEncoding(withAllowedCharacters: .urlQueryExtendedAllowed)
+        else {
+            TSMobileAnalytics.logger.log(
+                message: "Failed to add percent encoding to URL",
+                verbosity: .error)
+            return .empty
+        }
+
+        return encoded
+    }
+}
+
+extension CharacterSet{
+    static let urlQueryExtendedAllowed = CharacterSet.urlQueryAllowed.subtracting(CharacterSet(charactersIn: String.slash))
 }
 
 // MARK: - Private
@@ -200,17 +214,17 @@ private extension APIService {
         contentID.count <= .contentIDMaxLength
     }
 
-    func url(_ baseUrl: URL, withParameters parameters: [String : String]) -> URL {
+    func url(_ baseUrl: URL, withParameters parameters: KeyValuePairs<String,String>) -> URL {
         guard var urlComponents = URLComponents(url: baseUrl, resolvingAgainstBaseURL: false)
         else { return baseUrl }
 
         var queryItems = urlComponents.queryItems ?? [URLQueryItem]()
 
         for (key, value) in parameters {
-            queryItems.append(URLQueryItem(name: key, value: value))
+            queryItems.append(URLQueryItem(name: key.queryEncoded(), value: value.queryEncoded()))
         }
-
-        urlComponents.queryItems = queryItems
+        
+        urlComponents.percentEncodedQueryItems = queryItems
 
         return urlComponents.url ?? baseUrl
     }
@@ -221,8 +235,6 @@ private extension String {
 
     static let sdkVersion = "sdkversion"
     static let frameworkInfo = "SifoAppFrameworkInfo"
-
-    static let slashReplacement = "%2F"
 
     static let siteId = "siteId"
     static let appClientId = "appClientId"
