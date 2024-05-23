@@ -38,6 +38,20 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
+6.0.3 2024-05-23
+- Fixed bug related to the SifoInternet App
+- Make default values to true for attributes: shouldSyncWithBackendFirst and shouldUseJsonUrlSchemeSyncFormat
+- Update license to Commercial SDK (c) 2016-2024 Kantar Media Sweden AB
+- No API changes
+
+6.0.2 2024-03-13
+- Fix double encoding issue
+- Maintain order of query parameters
+- No API changes
+
+6.0.1 2024-02-27
+- Add Privacy Manifest 
+
 6.0.0
 - Complete Swift refactor of SDK
 - No API changes
