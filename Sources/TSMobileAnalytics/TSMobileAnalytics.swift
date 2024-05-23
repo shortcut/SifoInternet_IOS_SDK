@@ -102,8 +102,8 @@ public final class TSMobileAnalytics {
         self.keychainAccessGroup = keychainAccessGroup
         self.additionals = additionals
 
-        self.shouldSyncWithBackendFirst = additionals[Keys.shouldSyncWithBackendFirst] == StringBool.true.rawValue
-        self.shouldUseJsonUrlSchemeSyncFormat = additionals[Keys.shouldUseJsonUrlSchemeSyncFormat] == StringBool.true.rawValue
+        self.shouldSyncWithBackendFirst = additionals[Keys.shouldSyncWithBackendFirst] ?? "true" == StringBool.true.rawValue
+        self.shouldUseJsonUrlSchemeSyncFormat = additionals[Keys.shouldUseJsonUrlSchemeSyncFormat] ?? "true" == StringBool.true.rawValue
 
         SDKIntegrationValidator.validate(applicationName: applicationName, cpid: cpid)
 
