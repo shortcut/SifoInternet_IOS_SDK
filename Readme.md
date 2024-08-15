@@ -38,6 +38,9 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
+6.0.4 2024-08-15
+- Replaced NSLog with print
+
 6.0.3 2024-05-23
 - Fixed bug related to the SifoInternet App
 - Make default values to true for attributes: shouldSyncWithBackendFirst and shouldUseJsonUrlSchemeSyncFormat
