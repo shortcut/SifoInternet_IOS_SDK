@@ -15,7 +15,7 @@ public final class TSMobileAnalytics {
     // TODO: Find a way to automate this.
     /// This needs to be updated when a new release is made.
     /// Swift Package version numbers are grabbed from the tags of the git repository.
-    static let sdkVersion = "6.0.3"
+    static let sdkVersion = "6.0.4"
 
     static var shared: TSMobileAnalytics?
     static let logger = ConsoleLogger()
