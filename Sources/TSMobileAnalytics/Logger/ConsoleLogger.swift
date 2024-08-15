@@ -31,10 +31,7 @@ class ConsoleLogger: Logger {
 
 private extension ConsoleLogger {
     func print(message: @autoclosure @escaping () -> String, verbosity: Verbosity) {
-        NSLog(
-            .newLine + verbosity.emoji + .space + .prefix + verbosity.rawValue.uppercased() + .colon
-            + newLineIndentedMessage(from: message())
-        )
+        Swift.print("\(String.newLine)\(verbosity.emoji)\(String.space)\(String.prefix)\(verbosity.rawValue.uppercased())\(String.colon)\(newLineIndentedMessage(from: message()))")
     }
 
     func newLineIndentedMessage(from message: String) -> String {
