@@ -31,8 +31,8 @@ class ConsoleLogger: Logger {
 
 private extension ConsoleLogger {
     func print(message: @autoclosure @escaping () -> String, verbosity: Verbosity) {
-        NSLog(
-            .newLine + verbosity.emoji + .space + .prefix + verbosity.rawValue.uppercased() + .colon
+        Swift.print(
+            "\n\(verbosity.emoji) \(String.prefix)\(verbosity.rawValue.uppercased()):"
             + newLineIndentedMessage(from: message())
         )
     }
