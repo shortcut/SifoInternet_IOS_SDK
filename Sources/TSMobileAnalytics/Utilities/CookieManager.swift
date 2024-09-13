@@ -66,23 +66,30 @@ private extension CookieManager {
 
         guard #available(iOS 11.0, *)
         else { completion(); return }
+        
+        DispatchQueue.main.async {
+            let wkStore = WKWebsiteDataStore.default().httpCookieStore
+            let dispatchGroup = DispatchGroup()
 
-        let wkStore = WKWebsiteDataStore.default().httpCookieStore
-
-        let dispatchGroup = DispatchGroup()
-
-        wkStore.getAllCookies { cookies in
-            for cookie in cookies {
-                for domain in domains {
-                    if domain.contains(cookie.domain) {
-                        dispatchGroup.enter()
-                        wkStore.delete(cookie) { dispatchGroup.leave() }
+            dispatchGroup.enter()
+    
+            wkStore.getAllCookies { cookies in
+                for cookie in cookies {
+                    for domain in domains {
+                        if domain.contains(cookie.domain) {
+                            dispatchGroup.enter()
+                            wkStore.delete(cookie) {
+                                dispatchGroup.leave()
+                            }
+                        }
                     }
                 }
+                dispatchGroup.leave()
             }
-        }
-        dispatchGroup.notify(queue: .main) {
-            completion()
+
+            dispatchGroup.notify(queue: .main) {
+                completion()
+            }
         }
     }
 
