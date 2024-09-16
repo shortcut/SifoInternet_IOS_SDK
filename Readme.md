@@ -38,6 +38,10 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
+6.0.5 2024-09-16
+- Fix API cookie sync
+- Fix crash on clearing cookies
+
 6.0.4 2024-08-15
 - Replaced NSLog with print
 
