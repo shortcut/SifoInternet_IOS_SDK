@@ -38,6 +38,9 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
+6.0.6 2024-10-24
+- Fix Main Thread Warning
+
 6.0.5 2024-09-16
 - Fix API cookie sync
 - Fix crash on clearing cookies

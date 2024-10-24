@@ -12,6 +12,9 @@ using Kantar Sifo’s services. The SDK contains three folders:
 
 RELEASE NOTES:
 
+6.0.6 2024-10-24
+- Fix Main Thread Warning
+
 6.0.5 2024-09-16
 - Fix API cookie sync
 - Fix crash on clearing cookies
