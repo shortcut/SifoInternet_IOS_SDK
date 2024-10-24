@@ -443,7 +443,10 @@ private extension TSMobileAnalytics {
             return
         }
 
-        UIApplication.shared.open(url)
+        DispatchQueue.main.async {
+            UIApplication.shared.open(url)
+        }
+
     }
 
     static func deviceReference(applicationName: String) -> String? {
