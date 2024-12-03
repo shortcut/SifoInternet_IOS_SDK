@@ -38,8 +38,9 @@ The Sifo SDK is happy with whatever permissions your app uses.
 
 ## Release notes
 
-6.0.6 2024-10-24
+6.0.6 2024-12-03
 - Fix Main Thread Warning
+- Fix Old iOS versions fail to sync app due to missing percent encoding
 
 6.0.5 2024-09-16
 - Fix API cookie sync
