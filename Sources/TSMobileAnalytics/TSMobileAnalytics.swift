@@ -429,7 +429,14 @@ private extension TSMobileAnalytics {
 
         if shouldUseJsonUrlSchemeSyncFormat,
            let jsonFromAdditionalsDictionary {
-            urlString.append(jsonFromAdditionalsDictionary)
+            if let encodedJson = jsonFromAdditionalsDictionary.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
+                urlString.append(encodedJson)
+            } else {
+                Self.logger.log(
+                    message: "Failed to encode JSON from additionals dictionary.",
+                    verbosity: .error)
+                return
+            }
         } else {
             urlString.append(Bundle.main.exchangeUrlScheme)
         }
@@ -446,7 +453,6 @@ private extension TSMobileAnalytics {
         DispatchQueue.main.async {
             UIApplication.shared.open(url)
         }
-
     }
 
     static func deviceReference(applicationName: String) -> String? {
